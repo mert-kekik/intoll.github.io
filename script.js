@@ -38,10 +38,21 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
 
     dessert: [
-      { name: 'Salata Çeşitleri', price: '₺150', description: 'Taze ve hafif alternatifler.' },
-      { name: 'İçecekler', price: 'Fiyat sorunuz', description: 'Yemeğinize ve kahvenize eşlik eden seçenekler.' },
-      { name: 'Atıştırmalıklar', price: 'Fiyat sorunuz', description: 'Günün her saatine uygun.' }
-    ]
+      { name: 'Dondurma Çeşitleri(top)', price: '₺50', description: '' },
+      { name: 'San Sebastian', price: '₺350', description: '' },
+      { name: 'Belçika Çikolatalı Sufle', price: '₺350', description: '' },
+      { name: 'Kadife Pasta', price: '₺350', description: '' },
+      { name: 'Volkan Pasta(Ferrero)', price: '₺350', description: '' }
+    ],
+    noAlcohol: [
+      { name: 'Mojito', price: '₺400', description: '' },
+      { name: 'Tropical', price: '₺400', description: '' },
+      { name: 'Summer Breeze', price: '₺400', description: '' },
+      { name: 'Tarzan Cooler', price: '₺400', description: '' },
+      { name: 'Redbull Twist', price: '₺400', description: '' },
+      { name: 'Cinderella', price: '₺400', description: '' }
+    ],
+    
   };
 
   const tabs = document.querySelectorAll('.menu-tabs .tab');
