@@ -10,42 +10,62 @@ if (toggle && nav) {
 
 const data = {
   coffee: [
-    { name: 'Türk Kahvesi', price: '₺80', description: '' },
-    { name: 'Americano', price: '₺100', description: '' },
-    { name: 'Cappucino', price: '₺120', description: '' },
-    { name: 'Latte', price: '₺120', description: '' },
-    { name: 'Çay', price: '₺40', description: '' },
-    { name: 'Menengiç Kahvesi', price: '₺100', description: '' },
-    { name: 'Dibek Kahvesi', price: '₺100', description: '' },
-    { name: 'Salep', price: '₺110', description: '' },
-    { name: 'Sıcak Çikolata', price: '₺120', description: '' }
+    { name: 'Türk Kahvesi', price: '₺150', description: '' },
+    { name: 'Americano', price: '₺150', description: '' },
+    { name: 'Cappucino', price: '₺150', description: '' },
+    { name: 'Latte', price: '₺150', description: '' },
+    { name: 'Çay', price: '₺50', description: '' },
+    { name: 'Menengiç Kahvesi', price: '₺150', description: '' },
+    { name: 'Dibek Kahvesi', price: '₺150', description: '' },
+    { name: 'Salep', price: '₺200', description: '' },
+    { name: 'Sıcak Çikolata', price: '₺150', description: '' }
   ],
 
-  food: [
+  cold_coffee: [
     {
-      name: 'Hünkar Beğendi',
-      price: '₺280',
-      description: 'Geleneksel Türk mutfağından.'
+      name: 'Iced Americano',
+      price: '₺150',
+      description: ''
     },
     {
-      name: 'Urfa Kebap',
-      price: '₺320',
-      description: 'Izgara lezzetlerinden.'
+      name: 'Iced Latte',
+      price: '₺175',
+      description: ''
     },
     {
-      name: 'Et Sote',
+      name: 'Iced Karamel Latte',
+      price: '₺200',
+      description: ''
+    },
+    {
+      name: 'Churchill',
+      price: '₺200',
+      description: ''
+    },
+    {
+      name: 'Limonata',
+      price: '₺200',
+      description: ''
+    },{
+      name: 'Portakal Suyu',
+      price: '₺200',
+      description: ''
+    }{
+      name: 'Soğuk Çay Çeşitleri',
+      price: '₺85',
+      description: ''
+    }{
+      name: 'Muzlu Milkshake',
+      price: '₺200',
+      description: ''
+    }{
+      name: 'Cicibebe Milkshake',
+      price: '₺200',
+      description: ''
+    }{
+      name: 'Dondurmalı Milkshake',
       price: '₺300',
-      description: 'Doyurucu ana yemek seçeneği.'
-    },
-    {
-      name: 'Tavuk Şiş',
-      price: '₺250',
-      description: 'Izgaradan sevilen bir lezzet.'
-    },
-    {
-      name: 'İçli Köfte',
-      price: '₺90',
-      description: 'Geleneksel lezzet.'
+      description: ''
     }
   ],
 
