@@ -22,51 +22,16 @@ const data = {
   ],
 
   cold_coffee: [
-    {
-      name: 'Iced Americano',
-      price: '₺150',
-      description: ''
-    },
-    {
-      name: 'Iced Latte',
-      price: '₺175',
-      description: ''
-    },
-    {
-      name: 'Iced Karamel Latte',
-      price: '₺200',
-      description: ''
-    },
-    {
-      name: 'Churchill',
-      price: '₺200',
-      description: ''
-    },
-    {
-      name: 'Limonata',
-      price: '₺200',
-      description: ''
-    },{
-      name: 'Portakal Suyu',
-      price: '₺200',
-      description: ''
-    }{
-      name: 'Soğuk Çay Çeşitleri',
-      price: '₺85',
-      description: ''
-    }{
-      name: 'Muzlu Milkshake',
-      price: '₺200',
-      description: ''
-    }{
-      name: 'Cicibebe Milkshake',
-      price: '₺200',
-      description: ''
-    }{
-      name: 'Dondurmalı Milkshake',
-      price: '₺300',
-      description: ''
-    }
+    { name: 'Iced Americano', price: '₺150', description: '' },
+    { name: 'Iced Latte', price: '₺175', description: '' },
+    { name: 'Iced Karamel Latte', price: '₺200', description: '' },
+    { name: 'Churchill', price: '₺200', description: '' },
+    { name: 'Limonata', price: '₺200', description: '' },
+    { name: 'Portakal Suyu', price: '₺200', description: '' },
+    { name: 'Soğuk Çay Çeşitleri', price: '₺85', description: '' },
+    { name: 'Muzlu Milkshake', price: '₺200', description: '' },
+    { name: 'Cicibebe Milkshake', price: '₺200', description: '' },
+    { name: 'Dondurmalı Milkshake', price: '₺300', description: '' }
   ],
 
   dessert: [
@@ -88,39 +53,47 @@ const data = {
   ]
 };
 
+const tabs = document.querySelectorAll('.tab');
 const menuItems = document.querySelector('#menu-items');
 
-document.querySelectorAll('.tab').forEach((tab) => {
-  tab.addEventListener('click', () => {
-    document.querySelectorAll('.tab').forEach((item) => {
-      item.classList.remove('active');
-    });
-
-    tab.classList.add('active');
-
-    const items = data[tab.dataset.category] || [];
-
-    if (!menuItems) return;
-
-    menuItems.innerHTML = items
-      .map((item, index) => {
-        const description = item.description?.trim()
-          ? `<p>${item.description}</p>`
-          : '';
-
-        return `
-          <article class="menu-card">
-            <span class="menu-number">${String(index + 1).padStart(2, '0')}</span>
-            <div>
-              <h3>${item.name}</h3>
-              ${description}
-            </div>
-            <span class="price">${item.price || 'Fiyat sorunuz'}</span>
-          </article>
-        `;
-      })
-      .join('');
+function showCategory(tab) {
+  tabs.forEach((item) => {
+    item.classList.toggle('active', item === tab);
   });
+
+  const items = data[tab.dataset.category] || [];
+
+  if (!menuItems) return;
+
+  menuItems.innerHTML = items.map((item, index) => {
+    const description = item.description?.trim()
+      ? `<p>${item.description}</p>`
+      : '';
+
+    return `
+      <article class="menu-card">
+        <span class="menu-number">${String(index + 1).padStart(2, '0')}</span>
+        <div>
+          <h3>${item.name}</h3>
+          ${description}
+        </div>
+        <span class="price">${item.price || 'Fiyat sorunuz'}</span>
+      </article>
+    `;
+  }).join('');
+}
+
+tabs.forEach((tab) => {
+  tab.addEventListener('click', () => showCategory(tab));
+});
+
+const initialTab = document.querySelector('.tab.active') || tabs[0];
+if (initialTab) {
+  showCategory(initialTab);
+}
+
+document.querySelectorAll('#year').forEach((element) => {
+  element.textContent = new Date().getFullYear();
 });
 
 document.querySelectorAll('#year').forEach((element) => {
