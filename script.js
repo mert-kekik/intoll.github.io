@@ -45,12 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
       { name: 'Volkan Pasta(Ferrero)', price: '₺350', description: '' }
     ],
     noAlcohol: [
-      { name: 'Mojito', price: '₺400', description: '' },
-      { name: 'Tropical', price: '₺400', description: '' },
-      { name: 'Summer Breeze', price: '₺400', description: '' },
-      { name: 'Tarzan Cooler', price: '₺400', description: '' },
-      { name: 'Redbull Twist', price: '₺400', description: '' },
-      { name: 'Cinderella', price: '₺400', description: '' }
+      { name: 'Mojito', price: '₺400', description: 'maden suyu, limon, simple syrup, taze nane' },
+      { name: 'Tropical', price: '₺400', description: 'ananas suyu, blue cracao, portakal suyu' },
+      { name: 'Summer Breeze', price: '₺400', description: 'ananas suyu, gazoz, grenadine' },
+      { name: 'Tarzan Cooler', price: '₺400', description: 'portakal, ananas, limon, simple syrup' },
+      { name: 'Redbull Twist', price: '₺400', description: 'portakal, lime, soda, redbull white edition' },
+      { name: 'Cinderella', price: '₺400', description: 'portakal suyu, şeftali suyu, grenadine' }
     ],
     starter: [
       { name: 'Köfte Servis+Patates+İçecek', price: '₺450', description: 'Dumanı üstünde, lezzeti dilinde. Aman parmağını yeme!' },
