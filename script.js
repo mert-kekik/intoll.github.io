@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { name: 'Nargile Çeşitleri', price: '₺500', description: 'Tütün değil, keyif tüttürüyoruz!' },
       { name: 'Nargile Menü(nargile + 2 adet redbull + 3lü kuruyemiş tabağı + çiğköfte tabağı)', price: '₺1000', description: 'Sigaraya düşman, nargileye hayran.' }
     ],
-    starter: [
+    main: [
       { name: 'Kaşarlı Tost', price: '₺250', description: 'Her ısırıkta "oh be!" dedirten o tost.' },
       { name: 'Karışık Tost', price: '₺250', description: 'Doyurmazsa Tost Değildir.' },
       { name: 'Köfte Servis', price: '₺400', description: '' },
