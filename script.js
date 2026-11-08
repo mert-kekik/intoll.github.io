@@ -52,6 +52,35 @@ document.addEventListener('DOMContentLoaded', () => {
       { name: 'Redbull Twist', price: '₺400', description: '' },
       { name: 'Cinderella', price: '₺400', description: '' }
     ],
+    starter: [
+      { name: 'Köfte Servis+Patates+İçecek', price: '₺450', description: 'Dumanı üstünde, lezzeti dilinde. Aman parmağını yeme!' },
+      { name: 'Sucuk Ekmek', price: '₺250', description: 'Tavsiye Etmeyiz, Ağzınız kokar:)' },
+      { name: 'Kızartma Tabağı', price: '₺150', description: 'Kolestrolü olana tavsiye edilmez! ama yiyiin.' },
+      { name: 'İkili Kuruyemiş Tabağı', price: '₺250', description: 'Küçük tabak, büyük mutluluk' },
+      { name: 'Üçlü Kuruyemiş Tabağı', price: '₺300', description: 'Tuzlu mu, Kavruk mu, Çıtır mı? Hepsi burada' },
+      { name: 'Çekirdek Tabağı', price: '₺100', description: 'Çıtla Gitsin!' }
+    ],
+    keyif: [
+      { name: 'Nargile Çeşitleri', price: '₺500', description: 'Tütün değil, keyif tüttürüyoruz!' },
+      { name: 'Nargile Menü(nargile + 2 adet redbull + 3lü kuruyemiş tabağı + çiğköfte tabağı)', price: '₺1000', description: 'Sigaraya düşman, nargileye hayran.' }
+    ],
+    starter: [
+      { name: 'Kaşarlı Tost', price: '₺250', description: 'Her ısırıkta "oh be!" dedirten o tost.' },
+      { name: 'Karışık Tost', price: '₺250', description: 'Doyurmazsa Tost Değildir.' },
+      { name: 'Köfte Servis', price: '₺400', description: '' },
+      { name: 'İntoll Tost', price: '₺400', description: 'Şef ruh haline göre değil, kafasına göre hazırlar.' }
+    ],
+    mesrubat: [
+      { name: 'Coca Cola', price: '₺100', description: '' },
+      { name: 'Fanta', price: '₺100', description: '' },
+      { name: 'Sprite', price: '₺100', description: '' },
+      { name: 'Burn', price: '₺125', description: '' },
+      { name: 'Redbull', price: '₺150', description: '' },
+      { name: 'Meyveli Soda', price: '₺70', description: '' },
+      { name: 'Soda', price: '₺50', description: '' },
+      { name: 'Gazoz', price: '₺85', description: '' }
+    ]
+    
     
   };
 
