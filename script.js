@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ],
     main: [
       { name: 'Kaşarlı Tost', price: '₺250', description: 'Her ısırıkta "oh be!" dedirten o tost.' },
-      { name: 'Karışık Tost', price: '₺250', description: 'Doyurmazsa Tost Değildir.' },
+      { name: 'Karışık Tost', price: '₺300', description: 'Doyurmazsa Tost Değildir.' },
       { name: 'Köfte Servis', price: '₺400', description: '' },
       { name: 'İntoll Tost', price: '₺400', description: 'Şef ruh haline göre değil, kafasına göre hazırlar.' }
     ],
